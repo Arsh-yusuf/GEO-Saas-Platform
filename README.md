@@ -20,7 +20,6 @@ The system consists of two decoupled components:
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-   pip install cloudscraper
    ```
 3. Create a `.env` file in the root of the `/backend` folder and add your Gemini API key:
    ```env
