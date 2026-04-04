@@ -2,8 +2,6 @@
 
 A full-stack prototype designed to evaluate the search visibility and AI "citation readiness" of public webpages. Built with a FastAPI backend and a modern React frontend (Cyberpunk Neon UI).
 
-**Repository Link**: [INSERT_YOUR_GITHUB_OR_DRIVE_URL_HERE]
-
 ---
 
 ## 1. Setup Instructions & Architecture Overview
