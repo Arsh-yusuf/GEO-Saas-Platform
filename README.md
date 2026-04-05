@@ -61,7 +61,7 @@ The core objective was to extract standard SEO data and synthesize it into a JSO
     3. Hybrid Model
 *   **Decision**: Hybrid Approach — LLM as the primary engine with a Deterministic Fallback.
 *   **Reasoning**: 
-    *   *Where I used the LLM*: I used `gemini-1.5-flash` to process the scraped title, description, and headings to generate the JSON-LD. Rule-based logic is too brittle to capture the profound nuance of modern pages (e.g., understanding the difference between an *Article* about a product and a *Product* page itself). The LLM performs sophisticated semantic reasoning instantly to define the best `@type` and context.
+    *   *Where I used the LLM*: I used `gemini-2.5-flash` to process the scraped title, description, and headings to generate the JSON-LD. Rule-based logic is too brittle to capture the profound nuance of modern pages (e.g., understanding the difference between an *Article* about a product and a *Product* page itself). The LLM performs sophisticated semantic reasoning instantly to define the best `@type` and context.
     *   *Where I intentionally did not rely on the LLM*: I did *not* allow the LLM to govern the system if it fails. Because LLMs can hallucinate, experience rate limits, or suffer API outages, I wrote a deterministic fallback function. If the Gemini API fails, the code seamlessly drops into keyword-matching logic. This guarantees the API maintains 100% uptime and always returns a payload payload to the client.
 
 ---
