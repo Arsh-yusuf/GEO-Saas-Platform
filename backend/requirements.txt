@@ -8,3 +8,4 @@ google-generativeai
 python-dotenv
 certifi
 cloudscraper
+curl_cffi
